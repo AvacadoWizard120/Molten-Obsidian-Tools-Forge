@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "addition": {
+    "item": "moltenobsidiantools:molten_obsidian"
+  },
+  "result": {
+    "item": "moltenobsidiantools:molten_obsidian_pickaxe"
+  }
+}
