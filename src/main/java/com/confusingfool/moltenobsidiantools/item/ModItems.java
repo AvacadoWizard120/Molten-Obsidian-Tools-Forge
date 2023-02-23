@@ -14,7 +14,7 @@ public class ModItems
 
 
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN = ITEMS.register("molten_obsidian",
-            () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MATERIALS).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus)

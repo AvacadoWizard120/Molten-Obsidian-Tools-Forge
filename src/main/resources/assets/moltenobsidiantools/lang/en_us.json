@@ -1,3 +1,7 @@
 {
-  "item.moltenobsidiantools.molten_obsidian": "Molten Obsidian"
+  "item.moltenobsidiantools.molten_obsidian": "Molten Obsidian",
+
+
+
+  "itemGroup.moltenObsidianTools": "Molten Obsidian Tools"
 }
