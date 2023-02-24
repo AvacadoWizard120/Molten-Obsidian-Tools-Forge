@@ -37,6 +37,8 @@ description='''
 Have you ever been tired of crafting new diamond tools when one breaks? Well, now you can give your diamond tools an upgrade with molten obsidian!
 
 Now you can blast obsidian in a blast furnace to get Molten Obsidian, use the Molten Obsidian in a Smithing Table with your diamond tool and you get a Molten Obsidian tool!
+
+You can now also reinforce your netherite tools!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.moltenobsidiantools]] #optional

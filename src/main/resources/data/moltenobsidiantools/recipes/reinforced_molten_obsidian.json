@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    },
+    {
+      "item": "moltenobsidiantools:molten_obsidian"
+    }
+  ],
+  "result": {
+    "item": "moltenobsidiantools:reinforced_molten_obsidian",
+    "count": 1
+  }
+}

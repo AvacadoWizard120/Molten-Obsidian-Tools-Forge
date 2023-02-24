@@ -13,6 +13,9 @@ public class ModItems
 
 
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN = ITEMS.register("molten_obsidian",
+            () -> new Item(new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS).stacksTo(4)));
+
+    public static final RegistryObject<Item> REINFORCED_MOLTEN_OBSIDIAN = ITEMS.register("reinforced_molten_obsidian",
             () -> new Item(new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS).stacksTo(1)));
 
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN_PICKAXE = ITEMS.register("molten_obsidian_pickaxe",
@@ -29,6 +32,10 @@ public class ModItems
 
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN_HOE = ITEMS.register("molten_obsidian_hoe",
             () -> new HoeItem(ModItemTier.MOLTEN, 2, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_HOE = ITEMS.register("reinforced_obsidian_hoe",
+            () -> new HoeItem(ModItemTier.REINFORCED, 2, -1f,
                     new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
 
 
