@@ -1,8 +1,7 @@
 package com.confusingfool.moltenobsidiantools.item;
 
 import com.confusingfool.moltenobsidiantools.MoltenObsidianTools;
-import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +17,18 @@ public class ModItems
 
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN_PICKAXE = ITEMS.register("molten_obsidian_pickaxe",
             () -> new PickaxeItem(ModItemTier.MOLTEN, 4, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> MOLTEN_OBSIDIAN_AXE = ITEMS.register("molten_obsidian_axe",
+            () -> new AxeItem(ModItemTier.MOLTEN, 10, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> MOLTEN_OBSIDIAN_SHOVEL = ITEMS.register("molten_obsidian_shovel",
+            () -> new ShovelItem(ModItemTier.MOLTEN, 3, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> MOLTEN_OBSIDIAN_HOE = ITEMS.register("molten_obsidian_hoe",
+            () -> new HoeItem(ModItemTier.MOLTEN, 2, -1f,
                     new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
 
 
