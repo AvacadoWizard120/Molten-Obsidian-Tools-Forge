@@ -38,6 +38,18 @@ public class ModItems
             () -> new HoeItem(ModItemTier.REINFORCED, 2, -1f,
                     new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
 
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_SHOVEL = ITEMS.register("reinforced_obsidian_shovel",
+            () -> new ShovelItem(ModItemTier.REINFORCED, 3, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_AXE = ITEMS.register("reinforced_obsidian_axe",
+            () -> new AxeItem(ModItemTier.REINFORCED, 10, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_PICKAXE = ITEMS.register("reinforced_obsidian_pickaxe",
+            () -> new PickaxeItem(ModItemTier.REINFORCED, 4, -1f,
+                    new Item.Properties().tab(ModItemGroup.MOLTEN_OBSIDIAN_TOOLS)));
+
 
     public static void register(IEventBus eventBus)
     {

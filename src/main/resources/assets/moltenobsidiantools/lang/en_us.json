@@ -5,6 +5,10 @@
   "item.moltenobsidiantools.molten_obsidian_axe": "Molten Obsidian Axe",
   "item.moltenobsidiantools.molten_obsidian_shovel": "Molten Obsidian Shovel",
   "item.moltenobsidiantools.molten_obsidian_hoe": "Molten Obsidian Hoe",
+  "item.moltenobsidiantools.reinforced_obsidian_pickaxe": "Reinforced Obsidian Pickaxe",
+  "item.moltenobsidiantools.reinforced_obsidian_axe": "Reinforced Obsidian Axe",
+  "item.moltenobsidiantools.reinforced_obsidian_shovel": "Reinforced Obsidian Shovel",
+  "item.moltenobsidiantools.reinforced_obsidian_hoe": "Reinforced Obsidian Hoe",
 
   "itemGroup.moltenObsidianTools": "Molten Obsidian Tools"
 }

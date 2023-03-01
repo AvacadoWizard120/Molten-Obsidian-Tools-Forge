@@ -11,7 +11,7 @@ public enum ModItemTier implements IItemTier
 {
     MOLTEN(3, 1900, 9.4F, 3.5F, 3, () -> Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ModItems.MOLTEN_OBSIDIAN.get())),
 
-    REINFORCED(4, 3000, 11F, 4.0F, 10, () -> Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ModItems.REINFORCED_MOLTEN_OBSIDIAN.get()));
+    REINFORCED(4, 3000, 11F, 4.0F, 20, () -> Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ModItems.REINFORCED_MOLTEN_OBSIDIAN.get()));
 
 
     private final int level;
