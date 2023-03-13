@@ -1,8 +1,11 @@
 package com.confusingfool.moltenobsidiantools;
 
+import com.confusingfool.moltenobsidiantools.item.ModCreativeModeTab;
 import com.confusingfool.moltenobsidiantools.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +42,8 @@ public class MoltenObsidianTools
         // Register the doClientStuff method for modloading
         eventBus.addListener(this::doClientStuff);
 
+        eventBus.addListener(this::addCreative);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -61,6 +66,35 @@ public class MoltenObsidianTools
     private void processIMC(final InterModProcessEvent event)
     {
 
+    }
+
+    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    {
+        if(event.getTab() == ModCreativeModeTab.MOLTEN_OBSIDIAN_TOOLS_TAB)
+        {
+            event.accept(ModItems.MOLTEN_OBSIDIAN);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_AXE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_HOE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_PICKAXE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_SHOVEL);
+            event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_AXE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_HOE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
+        }
+
+        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+        {
+            event.accept(ModItems.MOLTEN_OBSIDIAN_AXE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_HOE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_PICKAXE);
+            event.accept(ModItems.MOLTEN_OBSIDIAN_SHOVEL);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_AXE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_HOE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
+        }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
 
