@@ -95,6 +95,12 @@ public class MoltenObsidianTools
             event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE);
             event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
         }
+
+        if (event.getTab() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.MOLTEN_OBSIDIAN);
+            event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN);
+        }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
 
