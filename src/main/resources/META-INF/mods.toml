@@ -29,7 +29,7 @@ displayName="Molten Obsidian Tools" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to kaupenjoe and ChatGPT for the very helpful explanations!" #optional
+credits="Thanks to kaupenjoe getting me started and selar_uwu for the textures!" #optional
 # A text field displayed in the mod UI
 authors="Eden Urias" #optional
 # The description text for the mod (multi line!) (#mandatory)
