@@ -3,11 +3,9 @@ package com.confusingfool.moltenobsidiantools;
 import com.confusingfool.moltenobsidiantools.item.ModCreativeModeTab;
 import com.confusingfool.moltenobsidiantools.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -16,8 +14,6 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MoltenObsidianTools.MOD_ID)
@@ -33,6 +29,7 @@ public class MoltenObsidianTools
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModCreativeModeTab.register(eventBus);
 
 
         eventBus.addListener(this::setup);
@@ -69,9 +66,9 @@ public class MoltenObsidianTools
 
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTab() == ModCreativeModeTab.MOLTEN_OBSIDIAN_TOOLS_TAB)
+        if(event.getTab() == ModCreativeModeTab.MOLTEN_OBSIDIAN_TOOLS_TAB.get())
         {
             event.accept(ModItems.MOLTEN_OBSIDIAN);
             event.accept(ModItems.MOLTEN_OBSIDIAN_AXE);
@@ -85,7 +82,7 @@ public class MoltenObsidianTools
             event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
         }
 
-        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
         {
             event.accept(ModItems.MOLTEN_OBSIDIAN_AXE);
             event.accept(ModItems.MOLTEN_OBSIDIAN_HOE);
@@ -97,7 +94,7 @@ public class MoltenObsidianTools
             event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
         }
 
-        if (event.getTab() == CreativeModeTabs.INGREDIENTS)
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.MOLTEN_OBSIDIAN);
             event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN);
