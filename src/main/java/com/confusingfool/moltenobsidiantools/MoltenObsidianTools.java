@@ -83,6 +83,7 @@ public class MoltenObsidianTools
             event.accept(ModItems.REINFORCED_OBSIDIAN_HOE);
             event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE);
             event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
+            event.accept(ModItems.REINFORCED_OBSIDIAN_ARROW);
         }
 
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES)
@@ -101,6 +102,11 @@ public class MoltenObsidianTools
         {
             event.accept(ModItems.MOLTEN_OBSIDIAN);
             event.accept(ModItems.REINFORCED_MOLTEN_OBSIDIAN);
+        }
+
+        if (event.getTab() == CreativeModeTabs.COMBAT)
+        {
+            event.accept(ModItems.REINFORCED_OBSIDIAN_ARROW);
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call

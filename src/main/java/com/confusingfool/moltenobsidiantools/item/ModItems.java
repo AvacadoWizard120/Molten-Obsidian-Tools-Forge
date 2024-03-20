@@ -50,6 +50,9 @@ public class ModItems
             () -> new PickaxeItem(ModTiers.REINFORCED, 4, -1f,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_ARROW = ITEMS.register("reinforced_obsidian_arrow",
+            () -> new ArrowItem(new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus)
     {
