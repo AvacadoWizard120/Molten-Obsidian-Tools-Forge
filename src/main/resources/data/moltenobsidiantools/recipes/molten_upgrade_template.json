@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "moltenobsidiantools:molten_obsidian"
+    }
+  },
+  "result": {
+    "item": "moltenobsidiantools:molten_upgrade_template",
+    "count": 4
+  }
+}

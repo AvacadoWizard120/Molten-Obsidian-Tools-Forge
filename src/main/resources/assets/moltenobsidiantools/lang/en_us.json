@@ -9,6 +9,22 @@
   "item.moltenobsidiantools.reinforced_obsidian_axe": "Reinforced Obsidian Axe",
   "item.moltenobsidiantools.reinforced_obsidian_shovel": "Reinforced Obsidian Shovel",
   "item.moltenobsidiantools.reinforced_obsidian_hoe": "Reinforced Obsidian Hoe",
+  "item.moltenobsidiantools.molten_upgrade_template": "Molten Upgrade Template",
+  "item.moltenobsidiantools.reinforced_upgrade_template": "Reinforced Upgrade Template",
+
+  "item.moltenobsidiantools.smithing_template.molten_upgrade.applies_to": "Diamond Tools",
+  "item.moltenobsidiantools.smithing_template.molten_upgrade.ingredients": "Molten Obsidian",
+  "item.moltenobsidiantools.smithing_template.molten_upgrade.base_slot_description": "Add diamond tool",
+  "item.moltenobsidiantools.smithing_template.molten_upgrade.additions_slot_description": "Add Molten Obsidian",
+
+  "item.moltenobsidiantools.smithing_template.reinforced_upgrade.applies_to": "Netherite Tools",
+  "item.moltenobsidiantools.smithing_template.reinforced_upgrade.ingredients": "Reinforced Obsidian",
+  "item.moltenobsidiantools.smithing_template.reinforced_upgrade.base_slot_description": "Add netherite tool",
+  "item.moltenobsidiantools.smithing_template.reinforced_upgrade.additions_slot_description": "Add Reinforced Molten Obsidian",
+
+
+  "upgrade.moltenobsidiantools.molten_upgrade": "Molten Upgrade",
+  "upgrade.moltenobsidiantools.reinforced_upgrade": "Reinforced Upgrade",
 
   "creativemodetab.molten_obsidian_tools_tab": "Molten Obsidian Tools"
 }

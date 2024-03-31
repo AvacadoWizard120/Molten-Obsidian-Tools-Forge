@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:diamond_hoe"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "moltenobsidiantools:molten_obsidian"
   },
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
   "result": {
     "item": "moltenobsidiantools:molten_obsidian_hoe"
+  },
+  "template": {
+    "item": "moltenobsidiantools:molten_upgrade_template"
   }
 }

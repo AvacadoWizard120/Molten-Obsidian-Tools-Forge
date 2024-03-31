@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:diamond_pickaxe"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "moltenobsidiantools:molten_obsidian"
   },
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
   "result": {
     "item": "moltenobsidiantools:molten_obsidian_pickaxe"
+  },
+  "template": {
+    "item": "moltenobsidiantools:molten_upgrade_template"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:netherite_shovel"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "moltenobsidiantools:reinforced_molten_obsidian"
   },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
   "result": {
     "item": "moltenobsidiantools:reinforced_obsidian_shovel"
+  },
+  "template": {
+    "item": "moltenobsidiantools:reinforced_upgrade_template"
   }
 }

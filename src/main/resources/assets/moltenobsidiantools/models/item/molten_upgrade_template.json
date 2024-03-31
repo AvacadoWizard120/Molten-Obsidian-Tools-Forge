@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "moltenobsidiantools:item/molten_upgrade_template"
+  }
+}

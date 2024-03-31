@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:netherite_pickaxe"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "moltenobsidiantools:reinforced_molten_obsidian"
   },
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
   "result": {
     "item": "moltenobsidiantools:reinforced_obsidian_pickaxe"
+  },
+  "template": {
+    "item": "moltenobsidiantools:reinforced_upgrade_template"
   }
 }
