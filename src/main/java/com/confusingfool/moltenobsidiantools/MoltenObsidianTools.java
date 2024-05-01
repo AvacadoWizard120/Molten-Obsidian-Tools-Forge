@@ -82,7 +82,6 @@ public class MoltenObsidianTools
             event.accept(ModItems.REINFORCED_OBSIDIAN_HOE);
             event.accept(ModItems.REINFORCED_OBSIDIAN_PICKAXE);
             event.accept(ModItems.REINFORCED_OBSIDIAN_SHOVEL);
-            event.accept(ModItems.REINFORCED_ARROW);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
@@ -107,7 +106,7 @@ public class MoltenObsidianTools
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
         {
-            event.accept(ModItems.REINFORCED_ARROW);
+            //TODO add Molten|Reinforced Swords
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
