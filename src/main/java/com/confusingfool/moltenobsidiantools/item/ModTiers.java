@@ -2,7 +2,6 @@ package com.confusingfool.moltenobsidiantools.item;
 
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.Tags;
 
