@@ -1,9 +1,13 @@
 {
   "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 2400,
+  "experience": 20,
+  "group": "molten_obsidian",
   "ingredient": {
     "item": "minecraft:obsidian"
   },
-  "result": "moltenobsidiantools:molten_obsidian",
-  "experience": 20,
-  "cookingtime": 2400
+  "result": {
+    "id": "moltenobsidiantools:molten_obsidian"
+  }
 }
