@@ -1,6 +1,8 @@
 package com.confusingfool.moltenobsidiantools.item;
 
 import com.confusingfool.moltenobsidiantools.MoltenObsidianTools;
+import com.confusingfool.moltenobsidiantools.item.custom.MoltenSwordItem;
+import com.confusingfool.moltenobsidiantools.item.custom.ReinforcedSwordItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.network.chat.Component;
@@ -59,6 +61,9 @@ public class ModItems
     public static final RegistryObject<Item> MOLTEN_OBSIDIAN_HOE = ITEMS.register("molten_obsidian_hoe",
             () -> new HoeItem(ModTiers.MOLTEN,(new Item.Properties()).attributes(HoeItem.createAttributes(ModTiers.MOLTEN, 2, -1f))));
 
+    public static final RegistryObject<Item> MOLTEN_OBSIDIAN_SWORD = ITEMS.register("molten_obsidian_sword",
+            () -> new MoltenSwordItem(ModTiers.MOLTEN, (new Item.Properties().attributes(MoltenSwordItem.createAttributes(ModTiers.MOLTEN, 3, -1.7f)))));
+
     public static final RegistryObject<Item> REINFORCED_OBSIDIAN_HOE = ITEMS.register("reinforced_obsidian_hoe",
             () -> new HoeItem(ModTiers.REINFORCED,(new Item.Properties()).attributes(HoeItem.createAttributes(ModTiers.REINFORCED, 2, -1f))));
 
@@ -70,7 +75,11 @@ public class ModItems
 
     public static final RegistryObject<Item> REINFORCED_OBSIDIAN_PICKAXE = ITEMS.register("reinforced_obsidian_pickaxe",
             () -> new PickaxeItem(ModTiers.REINFORCED, (new Item.Properties()).attributes(PickaxeItem.createAttributes(ModTiers.REINFORCED, 4, -1f))));
-    
+
+    public static final RegistryObject<Item> REINFORCED_OBSIDIAN_SWORD = ITEMS.register("reinforced_obsidian_sword",
+            () -> new ReinforcedSwordItem(ModTiers.REINFORCED, (new Item.Properties().attributes(ReinforcedSwordItem.createAttributes(ModTiers.REINFORCED, 3, -2.4f)))));
+
+
     public static final RegistryObject<Item> MOLTEN_UPGRADE_TEMPLATE = ITEMS.register("molten_upgrade_template",
             () -> new SmithingTemplateItem(MOLTEN_UPGRADE_APPLIES_TO, MOLTEN_UPGRADE_INGREDIENTS, MOLTEN_UPGRADE, MOLTEN_UPGRADE_BASE_SLOT_DESCRIPTION, MOLTEN_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createMoltenUpgradeIconList(), createMoltenUpgradeMaterialList()));
 
